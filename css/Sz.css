@@ -1,0 +1,231 @@
+/*Created by: Jorge Risquez 
+E-Mail:jorgerisquezsanchez@gmail.com
+Date:05/10/2017
+For:Venta-de-productos (Show-Only Webpage)
+*/
+
+/*Imagen cover
+{
+   width: 100%;
+   height: 100%;
+   background: url('imagen.jpg') 50% 50% no-repeat;
+   background-size: cover;
+
+papaya:#E24E42;
+Mustard:#E9B000;
+Blush:#EB6E80;
+Aqua:#008F95;
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body, html {
+  height: 100%;
+}
+
+body{
+	padding-top:51px;
+	background-color:#FFFFFF;
+	color:#333333;
+	overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.fa-instagram{color:#8a3ab9}
+.fa-twitter-square{color:#55acee}
+.fa-facebook-square{color:#3b5998}
+
+ul.menu>li:hover{
+  background: rgba(213,103,116,1);
+  background: -moz-linear-gradient(top, rgba(213,103,116,1) 0%, rgba(167,42,56,0.94) 50%, rgba(135,29,41,0.93) 51%, rgba(185,42,29,0.87) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(213,103,116,1)), color-stop(50%, rgba(167,42,56,0.94)), color-stop(51%, rgba(135,29,41,0.93)), color-stop(100%, rgba(185,42,29,0.87)));
+  background: -webkit-linear-gradient(top, rgba(213,103,116,1) 0%, rgba(167,42,56,0.94) 50%, rgba(135,29,41,0.93) 51%, rgba(185,42,29,0.87) 100%);
+  background: -o-linear-gradient(top, rgba(213,103,116,1) 0%, rgba(167,42,56,0.94) 50%, rgba(135,29,41,0.93) 51%, rgba(185,42,29,0.87) 100%);
+  background: -ms-linear-gradient(top, rgba(213,103,116,1) 0%, rgba(167,42,56,0.94) 50%, rgba(135,29,41,0.93) 51%, rgba(185,42,29,0.87) 100%);
+  background: linear-gradient(to bottom, rgba(213,103,116,1) 0%, rgba(167,42,56,0.94) 50%, rgba(135,29,41,0.93) 51%, rgba(185,42,29,0.87) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d56774', endColorstr='#b92a1d', GradientType=0 )
+}
+
+footer{
+  background:#000; 
+  color:#FFF;
+  padding:20px
+}
+
+
+section#Productos,section#Servicios{
+	padding:10px
+}
+
+section#Servicios{
+	background:#EEEEEE;
+}
+
+section#Contacto{
+	background:;
+}
+
+ul.social-buttons {
+  margin-bottom: 0;
+}
+ul.social-buttons li a {
+  display: block;
+  background-color: #222222;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  color: white;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+  background-color:#008F95;
+}
+
+
+
+#Productos .product-item {
+  margin: 0 0 15px;
+  right: 0;
+}
+#Productos .product-item .product-link {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+  border-style:solid;
+  border-color:#E9B000;
+  border-width:4px;
+}
+#Productos .product-item .product-link .product-hover {
+  background:rgba(226,78,66,0.9);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+#Productos .product-item .product-link .product-hover:hover {
+  opacity: 1;
+}
+#Productos .product-item .product-link .product-hover .product-hover-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: white;
+}
+#Productos .product-item .product-link .product-hover .product-hover-content i {
+  margin-top: -12px;
+}
+#Productos .product-item .product-link .product-hover .product-hover-content h3,
+#Productos .product-item .product-link .product-hover .product-hover-content h4 {
+  margin: 0;
+}
+#Productos .product-item .product-caption {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color:rgb(233,176,0);
+  text-align: center;
+  padding: 25px;
+}
+#Productos .product-item .product-caption h4 {
+  text-transform: none;
+  margin: 0;
+}
+#Productos .product-item .product-caption p {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  margin: 0;
+}
+#Productos * {
+  z-index: 2;
+}
+
+#Servicios .cont{
+  margin: 0 0 15px;
+  right: 0;
+}
+
+#Servicios .cont .link {
+  display: block;
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+#Servicios .cont .link .hover {
+  background:rgba(235,110,128,0.8);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+#Servicios .cont .link .hover:hover {
+  opacity: 1;
+}
+
+#Servicios .cont .link .hover .content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: white;
+}
+#Servicios .cont .link .hover .content i {
+  margin-top: -12px;
+}*/
+
+#Servicios .cont .link .hover .content h3,
+#Servicios .cont .link .hover .content h1 {
+  margin: 0;
+}
+#Servicios .cont .caption {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color:rgb(0,143,149);
+  text-align: center;
+  padding: 25px;
+}
+#Servicios .cont .caption h1 {
+  text-transform: none;
+  margin: 0;
+}
+
+#Servicios * {
+  z-index: 2;
+}
+
+
+#Contacto .form-cont{
+  background:#EB6E80;
+  padding:10px;
+  border-radius: 5px 10px;
+  -webkit-border-radius: 5px 10px;
+  -moz-border-radius: 5px 10px;
+}
+
+
+section#Contacto{
+  background-color:#E9B000;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+}
